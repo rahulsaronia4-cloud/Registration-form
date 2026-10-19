@@ -31,7 +31,6 @@
       scroll-behavior: smooth;
     }
 
-    /* Navigation */
     nav {
       position: sticky;
       top: 0;
@@ -69,7 +68,6 @@
       color: var(--primary);
     }
 
-    /* Hero Section */
     .hero {
       min-height: 85vh;
       display: flex;
@@ -81,11 +79,11 @@
     }
 
     .profile-img-container {
-      width: 170px;
-      height: 170px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       border: 3px solid var(--primary);
-      box-shadow: 0 0 30px rgba(56, 189, 248, 0.35);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.35);
       overflow: hidden;
       margin-bottom: 1.5rem;
       background: var(--card-bg);
@@ -152,7 +150,6 @@
       transform: translateY(-2px);
     }
 
-    /* Common Section Styles */
     section {
       padding: 4.5rem 8%;
     }
@@ -174,7 +171,6 @@
       border-radius: 2px;
     }
 
-    /* Skills Grid */
     .skills-grid {
       display: flex;
       flex-wrap: wrap;
@@ -201,7 +197,6 @@
       transform: translateY(-2px);
     }
 
-    /* Projects Grid */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -259,7 +254,6 @@
       font-weight: 600;
     }
 
-    /* Contact */
     .contact-box {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
@@ -305,7 +299,8 @@
   <!-- Hero Section -->
   <header class="hero" id="about">
     <div class="profile-img-container">
-      <img src="profile.png" onerror="this.src='https://avatars.githubusercontent.com/rahulsaronia4-cloud'" alt="Rahul" class="profile-img" />
+      <!-- Directly loads your GitHub profile picture -->
+      <img src="https://avatars.githubusercontent.com/rahulsaronia4-cloud" alt="Rahul" class="profile-img" />
     </div>
     <h1>Hi, I'm <span>Rahul</span> 👋</h1>
     <p class="tagline">
@@ -321,14 +316,14 @@
   <section id="skills">
     <h2 class="section-title">Skills & Learning Path</h2>
     <div class="skills-grid">
-      <div class="skill-card">Cloud Computing (AWS Basics)</div>
-      <div class="skill-card">Linux & Bash Shell</div>
-      <div class="skill-card">Docker & Virtualization</div>
-      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Cloud Computing (AWS / Infrastructure)</div>
+      <div class="skill-card">Linux & Terminal Commands</div>
+      <div class="skill-card">Docker & Containerization</div>
       <div class="skill-card">Computer Networks & DNS</div>
-      <div class="skill-card">Python & ML Basics</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Python & ML Fundamentals</div>
       <div class="skill-card">HTML5 & CSS3</div>
-      <div class="skill-card">JavaScript Essentials</div>
+      <div class="skill-card">JavaScript Basics</div>
     </div>
   </section>
 
@@ -339,7 +334,7 @@
       <div class="project-card">
         <div>
           <h3>AI Photo Detector</h3>
-          <p>An image analysis tool developed during BCA to detect and classify image features using machine learning concepts.</p>
+          <p>An intelligent system developed during BCA to detect and classify image characteristics using machine learning concepts.</p>
           <div class="project-tags">
             <span>Python</span>
             <span>Machine Learning</span>
@@ -352,20 +347,20 @@
       <div class="project-card">
         <div>
           <h3>User Registration Form</h3>
-          <p>Clean, interactive web form with frontend validation and responsive layout, hosted on GitHub Pages.</p>
+          <p>Clean, interactive web form with client-side form validation and responsive layout hosted on GitHub Pages.</p>
           <div class="project-tags">
             <span>HTML5</span>
             <span>CSS3</span>
             <span>JavaScript</span>
           </div>
         </div>
-        <a href="https://github.com/rahulsaronia4-cloud/Registration-form" target="_blank" class="project-link">Repository &rarr;</a>
+        <a href="https://github.com/rahulsaronia4-cloud/Registration-form" target="_blank" class="project-link">View Repo &rarr;</a>
       </div>
 
       <div class="project-card">
         <div>
           <h3>Cloud & DevOps Lab</h3>
-          <p>Hands-on experiments with Linux server environments, container setups, and cloud infrastructure learning.</p>
+          <p>Hands-on virtualization, Linux server management, shell scripts, and infrastructure experiments.</p>
           <div class="project-tags">
             <span>Linux</span>
             <span>Cloud</span>
@@ -381,7 +376,7 @@
   <section id="contact">
     <h2 class="section-title">Get In Touch</h2>
     <div class="contact-box">
-      <p>Have an idea or want to discuss Cloud, DevOps, or Web projects? Feel free to reach out!</p>
+      <p>Have an idea or want to discuss Cloud, DevOps, or tech projects? Feel free to connect!</p>
       <div class="btn-group">
         <a href="mailto:rahulsaronia4@gmail.com" class="btn btn-primary">Email Me</a>
         <a href="https://github.com/rahulsaronia4-cloud" target="_blank" class="btn btn-outline">GitHub Profile</a>
@@ -391,7 +386,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Rahul. Built & Hosted on GitHub Pages.</p>
+    <p>&copy; 2026 Rahul. Hosted on GitHub Pages.</p>
   </footer>
 
 </body>
