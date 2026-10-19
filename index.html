@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #f5f3ff;
+      color: #25213b;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 380px;
+      background: #ffffff;
+      padding: 32px;
+      border: 1px solid #e9e3ff;
+      border-radius: 16px;
+      box-shadow: 0 12px 35px #5b21b610;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      background: #ede9fe;
+      color: #6d28d9;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 27px;
+      margin: 18px 0 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      color: #77738b;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 7px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ded9eb;
+      border-radius: 8px;
+      background: #fdfcff;
+      color: #25213b;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: #8b5cf6;
+      box-shadow: 0 0 0 3px #8b5cf620;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 24px;
+      padding: 13px;
+      background: #6d28d9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #5b21b6;
+    }
+
+    .footer {
+      text-align: center;
+      color: #89849b;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <span class="tag">GET STARTED</span>
+
+    <h1>Create account</h1>
+    <p class="subtitle">
+      Fill in your details to get started.
+    </p>
+
+    <form onsubmit="registerUser(event)">
+      <label for="name">Full name</label>
+      <input id="name" type="text"
+             placeholder="Enter your name" required>
+
+      <label for="email">Email address</label>
+      <input id="email" type="email"
+             placeholder="you@example.com" required>
+
+      <label for="password">Password</label>
+      <input id="password" type="password"
+             placeholder="Minimum 8 characters"
+             minlength="8" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" required>
+        <option value="">Choose an option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="prefer-not">Prefer not to say</option>
+      </select>
+
+      <button type="submit">Create account →</button>
+    </form>
+
+    <p class="footer">
+      Simple design. Easy registration.
+    </p>
+  </main>
+
+  <script>
+    function registerUser(event) {
+      event.preventDefault();
+      alert("Registration successful!");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
